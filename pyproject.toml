@@ -1,0 +1,30 @@
+[build-system]
+requires = ["scikit-build-core>=0.10", "pybind11>=2.12"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "lob"
+version = "0.1.0"
+description = "L3 limit order book reconstruction and event-driven backtester (C++17 core, pybind11)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "pyarrow"]
+
+[project.optional-dependencies]
+research = ["matplotlib", "statsmodels", "jupyter"]
+test = ["pytest"]
+
+[tool.scikit-build]
+wheel.packages = ["python/lob"]
+cmake.build-type = "Release"
+build-dir = "build/skbuild-{wheel_tag}"
+editable.mode = "redirect"
+editable.rebuild = false
+
+[tool.scikit-build.cmake.define]
+LOB_BUILD_TESTS = "OFF"
+LOB_BUILD_BENCH = "OFF"
+LOB_BUILD_PYTHON = "ON"
+
+[tool.pytest.ini_options]
+testpaths = ["python/tests"]

@@ -1,0 +1,25 @@
+# data & outputs
+data/
+results/
+# build
+build/
+build-*/
+_skbuild/
+*.so
+*.dylib
+*.o
+*.a
+CMakeCache.txt
+CMakeFiles/
+# python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+# editor / os
+.DS_Store
+.vscode/
+.idea/
