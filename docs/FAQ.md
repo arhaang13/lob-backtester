@@ -1,8 +1,9 @@
-# Study guide: every design decision as an interview question
+# Design FAQ
 
-Numbers quoted below come from your own runs on the LOBSTER 2012-06-21 samples
-(Apple M4 Pro). Re-run `scripts/validate_all.py`, `build/replay_bench`, and
-notebook 03 to refresh them before an interview.
+Answers to the questions this project's design tends to raise, organized by
+topic. Numbers below are from local runs on an Apple M4 Pro; re-run
+`scripts/validate_all.py`, `build/replay_bench`, and notebook 03 to reproduce
+them on your own machine and data.
 
 ---
 

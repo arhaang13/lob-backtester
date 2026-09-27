@@ -7,8 +7,12 @@ name = "lob"
 version = "0.1.0"
 description = "L3 limit order book reconstruction and event-driven backtester (C++17 core, pybind11)"
 readme = "README.md"
+license = {text = "MIT"}
 requires-python = ">=3.10"
 dependencies = ["numpy", "pandas", "pyarrow"]
+
+[project.urls]
+Repository = "https://github.com/arhaang13/lob-backtester"
 
 [project.optional-dependencies]
 research = ["matplotlib", "statsmodels", "jupyter"]

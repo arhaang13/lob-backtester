@@ -5,7 +5,7 @@
 // are L3 (each row names an order id), which is what lets us know *where in
 // the queue* a simulated order would sit.
 //
-// Data structure summary (the resume bullet):
+// Data structure summary:
 //   * price-level map            : BidSide/AskSide, std::map<Price, PriceLevel>
 //   * per-level intrusive lists  : PriceLevel{head,tail}, Order{prev,next}
 //   * order-ID hash index        : std::unordered_map<OrderId, Order*>

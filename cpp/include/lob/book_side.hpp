@@ -9,7 +9,7 @@
 // move, so PriceLevel* held by Orders stay valid. The comparator picks the
 // direction: bids sort descending (highest first), asks ascending.
 //
-// ALTERNATIVE (interview talking point): a dense std::vector indexed by tick
+// ALTERNATIVE: a dense std::vector indexed by tick
 // gives true O(1) find-or-create at the cost of memory proportional to the
 // price range and a scan to find the next best level when the top empties.
 #pragma once

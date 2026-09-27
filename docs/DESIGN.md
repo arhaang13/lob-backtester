@@ -18,7 +18,7 @@ cpp/include/lob/   engine headers (documented in place)      cpp/src/  implement
 bindings/          pybind11 module `lob._lob`                python/lob/  data, reconstruct, validate, signals, research, backtest
 cpp/tests/         GoogleTest (29 tests, ASan/UBSan clean)   python/tests/ pytest (8 tests)
 cpp/bench/         replay_bench                              scripts/  fetch, convert, validate_all, run_backtest, make_notebooks
-docs/              this file, LOBSTER_FORMAT.md, STUDY_GUIDE.md   notebooks/ 01 data+book, 02 OFI, 03 backtest
+docs/              this file, LOBSTER_FORMAT.md, FAQ.md   notebooks/ 01 data+book, 02 OFI, 03 backtest
 ```
 
 ## 3. Order book (`order_book.hpp`)
